@@ -1,0 +1,5 @@
+O que era pra ser feito: Implementar a seguinte estrutura de herança: 
+Funcionario: /atributos String nome String cpf double salario /métodos Construtores() Gets() e Sets() Imprime() GetBonificacao() – retorna 10 % do valor do salário ]
+Gerente: /atributos int numeroFuncionariosGerenciados /métodos Construtores() Gets() e Sets() Imprime() GetBonificacao – retorna 15 % do valor do salário 
+Diretor: /atributos int numeroDepartamentosGerenciados /métodos Construtores() Gets() e Sets() Imprime() GetBonificacao – retorna 30 % do valor do salário 
+Engenheiro: /métodos Construtores() Imprime() GetBonificacao() – retorna 20 % do valor do salário Secretario: /métodos Construtores() Imprime() GetBonificacao() – retorna 5 % do valor do salário
