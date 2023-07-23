@@ -36,9 +36,10 @@ public class cadastro extends JFrame {
         cadastrar.setForeground(Color.black);
         cadastrar.setBounds(200, 330, 150, 30);
         cadastrar.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                String comparar1 = inpt2.getText();
-                String comparar2 = inpt3.getText();
+            public void actionPerformed(ActionEvent e) {                        
+                String comparar1 = inpt2.getText();    
+                String comparar2 = inpt3.getText();                     
+                if ( comparar2.length() >= 8 && comparar1.length() >= 8) {    
                 if (comparar1.equals(comparar2)) {
                     user.setUsuario(inpt1.getText());
                     user.setSenha(comparar2);
@@ -46,6 +47,9 @@ public class cadastro extends JFrame {
                 } else {
                     JOptionPane.showMessageDialog(null, "As senhas precisam ser iguais.");
                 }
+            } else {
+                JOptionPane.showMessageDialog(null,"Senha precisa ser igual ou maior que 8 digitos.");
+            }
             }
         });
         // JFRAME
